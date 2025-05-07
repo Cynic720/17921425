@@ -5,7 +5,7 @@ pcd1 = o3d.io.read_point_cloud("result.pcd")
 pcd2 = o3d.io.read_point_cloud("data\helical_curve\IrregularHelix//target.pcd")
 pcd_all = pcd2 + pcd1
 o3d.visualization.draw_geometries([pcd_all],
-                                      window_name="重叠和非重叠点",
+                                      window_name="Overlapping and non-overlapping points",
                                       width=1024, height=768,
                                       left=50, top=50,
                                       mesh_show_back_face=False)
